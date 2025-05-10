@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Caixas</title>
+    <style>
+        div#boxlevel{
+            width: fit-content;
+            background-color: #7fff94;
+            padding: 8px;
+            border: 4px solid #fddf36;
+            margin:  20px auto 20px auto;
+            outline: 8px dashed #800000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">Index</a>
+    </header>
+    <main>
+        <h1>Box Model</h1>
+        <p>O box model é um conceito fundamental no CSS que descreve como os elementos HTML são representados como caixas retangulares na página. Cada elemento possui uma caixa que consiste em quatro partes principais: conteúdo, preenchimento (padding), borda (border) e margem (margin).</p>
+        <p>O box model é importante porque afeta o layout e o espaçamento dos elementos na página. Compreender como funciona o box model permite que você controle melhor a aparência e o posicionamento dos elementos em seu design.</p>
+        <p>O box model é composto por:</p>
+        <ul>
+            <li><strong>Conteúdo:</strong> A área onde o texto e as imagens aparecem.</li>
+            <li><strong>Preenchimento (padding):</strong> O espaço entre o conteúdo e a borda do elemento.</li>
+            <li><strong>Borda (border):</strong> A linha que envolve o elemento.</li>
+            <li><strong>Margem (margin):</strong> O espaço entre a borda do elemento e os elementos adjacentes.</li>
+        </ul>
+        <h1>Box Level</h1>
+        <p>O box level é uma propriedade CSS que define o nível de empilhamento de um elemento em relação a outros elementos na página. O box level pode ser definido usando as propriedades z-index e position.</p>
+        <p>O z-index é um valor numérico que determina a ordem de empilhamento dos elementos. Elementos com um z-index maior serão exibidos acima de elementos com um z-index menor. A propriedade position define como o elemento é posicionado na página (por exemplo, estático, relativo, absoluto ou fixo).</p>
+        <img src="imgs/boxlevel.png" alt="" width="100%">
+        
+            <div class="bg" style="height: 160px; display: inline-block; width: 60%;">
+                <div id="boxlevel"><span style="background-color:#79ceff;">Content</span></div>
+            </div>
+            <div style="width: 30%; display: inline-block; margin-left: 20px;">
+                <div style="background-color: #79ceff; height: 24px;"><p>content</p></div>
+                <div style="background-color: #7fff94; height: 24px;"><p>padding</p></div>
+                <div style="background-color: #fddf36; height: 24px;"><p>border</p></div>
+                <div style="background-color: #800000; height: 24px;"><p>outline</p></div>
+                <div style="background-color: #fae8af; height: 24px;"><p>margin?</p></div>
+            </div>
+    <footer>
+        <a class="back" href="index.html">Voltar</a> 
+    </footer>
+    </main>
+    
+</body>
+</html>

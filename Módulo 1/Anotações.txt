@@ -1,0 +1,83 @@
+# Módulo 1 - Introdução ao HTML e CSS
+Conceitos básicos, preparação do ambiente, semântica do HTML5, textos, títulos, ligações, multimídia, estilos.
+
+# Módulo 2 - Deixando o site mais bonito
+Fundamentos do Design, psicologia das cores, tipografia, elementos CSS, modelo de caixas, wireframes, responsividade.
+
+# Módulo 3 - Colocando uum protótipo no ar
+Versionamento de software, hospedagem de sites estáticos, tabelas.
+
+#Módulo 4 - Aprofundando os conhecimentos em HTML e CSS
+Quadros em linha, formulários, media queries, mobile first.
+
+#Módulo 5 - Novas Tecnologias
+Flexbox, Grid Layout, Projeto Final.
+
+# Hospedagem
+Hostnet
+
+------------------------------------------------------------------------------
+
+Módulo 1 - Introdução ao HTML e CSS
+
+#Capítulo 1
+#HTML & CSS
+HTML - HyperText Markup Language
+CSS - Cascading Style Sheets
+
+github.com/gustavoguanabara
+gustavoguanabara.github.io 
+
+#Referências
+MDN - Mozzilla Developer Network
+https://developer.mozilla.org/pt-BR/docs/Web/HTML
+
+W3C - World Wide Web Consortium
+
+WHATWG - Web Hypertext Application Technology Working Group
+
+W3Schools 
+
+#Livros
+Alta Books - HTML5 e CSS3: Desenvolvendo Páginas Web com as Novas Tecnologias
+https://www.altabooks.com.br/produto/HTML5-e-CSS3-Desenvolvendo-Paginas-Web-com-as-Novas-Tecnologias-2a-Edicao
+
+Alta Books - Jon Duckett - HTML5 e CSS3: O Guia Prático
+
+#Capítulo 2
+Representação de Dados
+Internet, etc.
+MB-MegaByte = Armazenamento de 1.000.000 bytes
+Mb-MegaBit = Transferência de 1.000.000 bits
+DNS - Domain Name System
+IP - Internet Protocol
+
+
+Hospedagem - local onde está armazenado o site
+URL - Uniform Resource Locator
+Protocolo - http:// ou https://
+Subdomínio - gustavoguanabara 
+Domínio - github.io
+TLD - Top Level Domain - .com, .org, .gov, .edu, .br, etc.
+GTLD - Generic Top Level Domain - .com, .org, .net, etc.
+CCTLD - Country Code Top Level Domain - .br, .uk, .jp, etc.
+
+#Capítulo 3
+a HTML e as CSS
+HTML - HyperText Markup Language
+CSS - Cascading Style Sheets
+
+HTML focado em conteúdo (txt, imgs, videos, tabelas)
+CSS focado em design (cores, sombrar, tamanhos e posicionamento)
+JS focado em interações (menos, animações, popup)
+
+#Front-end, Back-end e Full Stack
+Front - client-side
+Back - server-side (alterando banco, por exemplo)
+Full Stack é a soma dos dois
+
+#Texto
+
+Semântica > Forma
+usar strong invés de b
+usar em invés de i

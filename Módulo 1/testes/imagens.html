@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Teste de Imagens</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Imagem diminui e aumenta baseada no tamanho da tela</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="../imgs/p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="../imgs/m.png" type="image/png">
+        <img src="../imgs/g.png" alt="Imagem flexível" >
+    </picture>
+    <!-- Footer -->
+    <a href="../index.html">Voltar para o índice</a><br>
+</body>
+</html>

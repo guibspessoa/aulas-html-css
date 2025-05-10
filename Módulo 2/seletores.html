@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Classes, Ids, etc.</title>
+    <style>
+        .fundo {
+            display: inline-block;
+            background-color: lightblue;
+            border-radius: 4px;
+            padding: 20px;
+        }
+
+        .fundo:hover {
+            background-color: rgb(255, 187, 0);
+            color: white;
+        }
+
+        .fundo > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="principal">Seletores personalizados</h1>
+        <p>a tag id deve ser única na página e vai aparecer como # no .css</p>
+        <p>a tag class pode se repetir e vai aparecer como . no .css</p>
+        <p>Pseudo-classes</p>
+        <p>utilizar a propriedade com :+status (hover, etc.). ex. div:hover</p>
+        <div>
+            <div class="fundo">01 <p>rapaz</p></div>
+            <div class="fundo">02 <p>é magia é?</p></div>
+            <div class="fundo">03 <p>oloko</p></div>
+        </div>
+
+        <br>
+        <!-- footer -->
+        <a class="back" href="index.html">Voltar</a>
+    </main>
+</body>
+</html>

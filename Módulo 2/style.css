@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Imperial+Script&display=swap');
+
+/*
+    # id
+    . class
+    : pseudo-class
+    :: pseudo-element
+    > child selector
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-image: linear-gradient(to top, #f0eac8, #cebf9e);
+}
+
+header{
+    background-color: #f0efe9;
+    border-radius: 8px;
+    width: 90%;
+    padding: 12px;
+    margin: 16px auto 16px auto;
+    
+}
+
+main{
+    background-color: #f0efe9;
+    border-radius: 8px;
+    width: 70%;;
+    padding: 20px;
+    margin: auto;
+}
+
+h1{ color: #660505; 
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    font-size: 3em;
+}   
+/*seletor*/
+h1#principal{
+    color: #f0efe9;
+    background-color: #660505;
+    text-align: center;
+    font-size: 4em;
+    border-radius: 8px;
+}
+
+p{
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: auto;
+}
+
+a{  
+    font-weight: 600;
+    text-decoration: none;
+    color: #660505;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #420566;
+}
+
+
+a.back{
+    display: inline-block;
+    text-decoration: none;
+    color: #f0efe9;
+    background-color: rgb(255, 0, 140);
+    padding: 8px 16px;
+    margin-top: 16px;
+    border-radius: 500px;
+}
+
+div.bg{
+    background-color: #fae8af;
+}
