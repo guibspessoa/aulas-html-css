@@ -9,13 +9,19 @@
     :: pseudo-element
     > child selector
 */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 body {
-    background-image: linear-gradient(to top, #f0eac8, #cebf9e);
+    
+    min-height: 100vh;
+    background: #660505 url('imgs/universo.jpg') center center no-repeat fixed; 
+    /*background-color, image, position, repeat, size (acho que não), attachment */
+    background-size: cover;
+    
 }
 
 header{
@@ -85,4 +91,25 @@ a.back{
 
 div.bg{
     background-color: #fae8af;
+}
+
+div.bgimg{
+    border: 2px solid #660505;
+    border-radius: 10px;
+    background-color: aqua;
+    height: 200px;
+}
+
+div#q1{
+    background-color: blue;
+}
+
+div#q2{
+    background-image: linear-gradient(to bottom, #e6c612, #0bb33d);
+}
+
+div#q3{
+    background-image: url('imgs/g.png');
+    background-position: center top;
+    background-size: 100% auto;
 }
