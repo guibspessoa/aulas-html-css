@@ -7,6 +7,7 @@
     <title>Tabelas</title>
     <style>
         table {
+            position: relative;
             border-collapse: collapse;
             width: 100%;
             border: 4px solid red;
@@ -17,9 +18,15 @@
             padding: 10px;
         }
 
-        thead {
+        thead > tr > th {
+            position: sticky;
+            top: 0;
             background-color: #ffc4c4;
         }
+
+        tbody tr:nth-child(odd) {
+            background-color: #caffa7;
+        }   
 
 
     </style>
@@ -55,7 +62,7 @@ table <br>
         </table>
         <br>
         <h1>Tabelas Grandes</h1>
-        <p>Hierarquia das tabelas grandes <br>
+        <p>Hierarquia das tabelas grandes</p> <br>
         <pre>
 table <br> 
     thead <br>
@@ -63,25 +70,158 @@ table <br>
     tbody <br>
             tr td th <br>
     tfoot <br>
-            tr td th<br>
-        </p></pre>
+            tr td th<br></pre>
         <table>
+            <caption>Exemplo de tabela</caption>
             <thead>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
+                <th scope="col">Header 1</th>
+                <th scope="col">Header 2</th>
+                <th scope="col">Header 3</th>
             </thead>
             <tbody>
-                <td>Info 1</td>
-                <td>Info 2</td>
-                <td>Info 3</td>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td colspan="2">Info 2</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td rowspan="3">Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
+                <tr>
+                    <td>Info 1</td>
+                    <td>Info 2</td>
+                    <td>Info 3</td>
+                </tr>
             </tbody>
             <tfoot>
-                <th>Info </th>
+                <th scope="row">Info </th>
                 <td>Info </td>
                 <td>Info </td>
             </tfoot>
         </table>
+<br>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </table>
+
         <footer>
         <a class="back" href="index.html">Voltar</a> 
         </footer>
