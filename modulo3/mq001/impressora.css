@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*---impressão---*/
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    header, main {
+        background-color: transparent;
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    header h1, main h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    iframe#container {
+        height: auto;
+        border: none;
+    }
+}
