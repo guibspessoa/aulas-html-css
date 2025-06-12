@@ -7,10 +7,42 @@
     <link rel="stylesheet" href="portrait.css" media="screen and (orientation: portrait)">
     <link rel="stylesheet" href="landscape.css" media="screen and (orientation: landscape)">
     <link rel="stylesheet" href="impressora.css" media="print">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Media Query</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li> 
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+
     <h1>Title</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas amet consequuntur libero eligendi perspiciatis impedit eius sunt nihil! Cupiditate in labore quia libero ipsa, sit atque perferendis quo repudiandae. Dolorum?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid est qui eius amet odio animi facere, itaque quis vero voluptatum corporis libero quo nihil reiciendis ut quidem minima eveniet obcaecati?</p>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth > 750) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
+
 </html>

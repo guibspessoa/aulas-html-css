@@ -2,7 +2,8 @@
 
 
 /*---tela---*/
-@media screen {
+@media screen and (min-width: 750px) {
+
     body {
         background-color: #1476c7;
         color: #cbf7c9;
@@ -24,5 +25,17 @@
     iframe#container {
         height: auto;
         border: none;
+    }
+
+    span#burger {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
     }
 }

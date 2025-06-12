@@ -1,7 +1,10 @@
 @charset "utf-8";
-
-
 /*---tela---*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @media screen {
     body {
         background-color: #c06565;
@@ -24,5 +27,9 @@
     iframe#container {
         height: auto;
         border: none;
+    }
+
+    menu {
+        display: none;
     }
 }
