@@ -21,10 +21,12 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
     box-shadow: 0 0 12px #043552a6;
     overflow: hidden;
+
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -65,7 +67,7 @@ div.campo > span.material-symbols-outlined {
     color: #ffffff;
     font-size: 24px;
     vertical-align: middle;
-    padding: 2px;
+    padding: 4px;
 }
 
 div.campo > input{
@@ -74,7 +76,8 @@ div.campo > input{
     padding: 4px;
     border: none;
     border-radius: 2px;
-    width: calc(100% - 36px);
+    width: calc(100% - 39px);
+    height: 27px;
 
 }
 div.campo > input:focus-within{
