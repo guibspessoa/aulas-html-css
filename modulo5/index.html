@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Módulo 5</title>
+</head>
+<body>
+    <h1>Módulo 5</h1>
+    <h2>Flexbox Básico</h2>
+    <p>div.container com display:flex e div.item com flex:auto</p>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>   
+    </div>
+
+    <h2>Direção</h2>
+    <p>flex-direction:row</p>
+    <div class="container">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-direction:row-reverse</p>
+    <div class="container" style="flex-direction: row-reverse;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+
+    <div style="display: flex; min-height: 200px;">
+        <div style="flex: auto;"">
+            <p>flex-direction:column</p>
+            <div class="containerex" style="flex-direction: column;">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+            </div>
+        </div>
+        <div style="flex: auto;">
+            <p>flex-direction:column-reverse</p>
+            <div class="containerex" style="flex-direction: column-reverse;">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Wrap</h2>
+    <div style="display: flex;"">
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:nowrap</p>
+            <div class="container" style="flex-wrap: nowrap; width: 100px">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+            </div>
+        </div>
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:wrap</p>
+            <div class="container" style="flex-wrap: wrap; width: 100px;">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+            </div>
+        </div>
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:wrap-reverse</p>
+            <div class="container" style="flex-wrap: wrap-reverse; width: 100px;">
+            <div class="itemex">A</div>
+            <div class="itemex">B</div>
+            <div class="itemex">C</div>
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;"">
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:nowrap</p>
+            <div class="container" style="flex-direction: column; flex-wrap: nowrap; height: 100px ; width: 250px;">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+            </div>
+        </div>
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:wrap</p>
+            <div class="container" style="flex-direction: column; flex-wrap: wrap; height: 100px; width: 250px">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+            </div>
+        </div>
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:wrap-reverse</p>
+            <div class="container" style="flex-direction: column; flex-wrap: wrap-reverse; height: 100px; width: 250px">
+            <div class="itemex">A</div>
+            <div class="itemex">B</div>
+            <div class="itemex">C</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Alinhamento</h2>
+    <p>flex-flow row</p>
+    <div class="container">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-flow row e justify-content:end</p>
+    <div class="container" style="justify-content: end;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-flow row e justify-content:center</p>
+    <div class="container" style="justify-content: center;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-flow row e justify-content:space-evenly</p>
+    <div class="container" style="justify-content: space-evenly;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-flow row e justify-content:space-around</p>
+    <div class="container" style="justify-content: space-around;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-flow row e justify-content:space-between</p>
+    <div class="container" style="justify-content: space-between;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+    <p>flex-flow row e justify-content:space-between e align-items:center</p>
+    <div class="container" style="justify-content: space-between; height: 150px; align-items: center;">
+        <div class="itemex">A</div>
+        <div class="itemex">B</div>
+        <div class="itemex">C</div>
+    </div>
+
+    <h2>Quebra de alinhamento</h2>
+    <div style="display: flex;">
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:wrap</p>
+            <div class="container" style="flex-flow: row wrap; width: 200px; height: 300px; align-content: space-evenly;">
+                <div class="itemex">A</div>
+                <div class="itemex">B</div>
+                <div class="itemex">C</div>
+                <div class="itemex">D</div>
+                <div class="itemex">E</div>
+                <div class="itemex">F</div>
+                <div class="itemex">G</div>
+                <div class="itemex">H</div>
+            </div>
+        </div>
+        <div style="flex: auto;">
+            <p>flex-direction:row flex-wrap:wrap-reverse</p>
+            <div class="container" style="flex-wrap: wrap-reverse; width: 100px;">
+            <div class="itemex">A</div>
+            <div class="itemex">B</div>
+            <div class="itemex">C</div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+</body>
+</html>

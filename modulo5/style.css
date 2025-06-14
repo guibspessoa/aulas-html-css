@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+div.container {
+  background-color: blueviolet;
+  display: flex;
+}
+
+div.item {
+    background-color: lightcoral;
+    border: 1px solid black;
+    flex: auto;
+    margin: 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+div.itemex {
+    background-color: lightcoral;
+    border: 1px solid black;
+    margin: 2px;
+    text-align: center;
+    padding: 20px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+div.containerex {
+    display: flex;
+    background-color: blueviolet;
+    margin: 12px;
+    height: 150px;
+}
