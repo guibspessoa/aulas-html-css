@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 div.container {
@@ -33,4 +34,18 @@ div.containerex {
     background-color: blueviolet;
     margin: 12px;
     height: 150px;
+}
+
+h2 {
+    color: blue;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+p {
+    color: #1f1818;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 4px;
 }
