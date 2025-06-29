@@ -3,3 +3,7 @@
 span#burger {
     display: none;
 }
+
+header > nav {
+    display: flex;
+}
