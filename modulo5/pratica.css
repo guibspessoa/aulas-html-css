@@ -15,6 +15,57 @@ body {
     background-color: #f0f0f0;
 }
 
-section.flexcontent {
-    background-color: rgb(197, 197, 197);
+p, h1, h2 {
+    margin-bottom: 8px;
 }
+
+header, section.normal{
+    padding: 20px;
+}
+
+section.flexcontent {
+    padding: 20px;
+    background-color: rgb(197, 197, 197);
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article > div.text{
+    flex: 1 1 400px;
+}
+
+article > div.media{
+    flex: 1 0 400px;
+}
+
+div.media > img {
+    display: block;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+}
+
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+
+
+
+
+
