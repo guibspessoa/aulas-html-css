@@ -50,18 +50,113 @@ p {
     margin-bottom: 4px;
 }
 
-div.grid {
+div.grid1 {
+    background-color: brown;
     display: grid;
-    height: 300px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
+    height: 200px;
 
+    grid-template: repeat(3, auto) / 1fr 2fr 1fr;
+    gap: 10px;
+    place-items: start normal;
+    place-content: normal end;
+
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
 }
 
 div.grid-item {
     background-color: lightcoral;
-    border: 1px solid black;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+div.grid2 {
+    background-color: rgb(44, 42, 165);
+    display: grid;
+    height: 200px;
+
+    grid-template: repeat(3, auto) / 2fr 1fr 1fr;
+    gap: 10px;
+    place-items: start normal;
+    place-content: normal end;
+
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+}
+
+div.grid-item2 {
+    background-color: rgb(128, 240, 240);
+    text-align: center;
+    padding: 10px;
+}
+
+div.grid3 {
+    background-color: rgb(42, 165, 73);
+    display: grid;
+    height: 100px;
+
+    grid-template: repeat(3, auto) / 2fr 1fr 1fr;
+    gap: 10px;
+    place-items: normal normal;
+    place-content: normal normal;
+
+    grid-auto-rows: 100px;
+    grid-auto-columns: 100px;
+}
+
+div.grid-item3 {
+    background-color: rgb(128, 240, 162);
+    text-align: center;
+    padding: 10px;
+}
+
+div.item1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+div.item2{
+    grid-row: 2/4;
+    grid-column: 1/2;
+}
+div.item3{
+    grid-area: 2/2/4/4;
+}
+
+
+div.grid4 {
+    background-color: rgb(165, 42, 138);
+    display: grid;
+    height: 400px;
+
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+div.grid-it4{
+    background-color: rgb(221, 128, 240);
+    text-align: center;
+}
+
+div.it1{
+    grid-area: 1/1/3/4;
+}
+
+div.it2{
+    grid-area: 3/1/4/4;
+}
+
+div.it3{
+    grid-area: 4/1/-2/3;
+}
+
+div.it4{
+    grid-area: 4/3/-2/3;
+}
+
+div.it5{
+    grid-area: -2/1/-1/-1;
 }
